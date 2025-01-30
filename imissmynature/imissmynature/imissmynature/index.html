@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>i miss my nature</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="focus and concentration">
+        <meta name="keywords" content="focus, pomodoro, nature">
+        <meta name="author" content="aclypse">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="icon" type="image/x-icon" href="images/imissmynature.ico">
+        <!-- https://game-icons.net/ -->
+    </head>
+        <body>
+            <main>
+            <section class="left">
+                <div class="title">
+                    <h1>i miss<br>my nature</h1>
+                    <p>stay focused and enjoy the sounds of nature</p>
+                </div>
+                <div class="iframe-container">
+                    <iframe title="Spotify Playlist" src="https://open.spotify.com/embed/playlist/4yZGJPfGVtbzSPHPcCs9RI?utm_source=generator" 
+                    width="340px" height="400px"
+                    frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </section>
+
+            <section class="center">
+                <img src="images/park-illustration.png" alt="park illustration">
+            </section>
+            
+            <section class="right">
+                <div class="audio-container">
+                    <!-- birds chirping -->
+                    <span class="audio-title">
+                        <h3>birds chirping</h3>
+                        <!-- <button aria-pressed="false" id="play-1" area-label="Birds Chirping">play</button> -->
+                        <button class="btn" title="play sound"><i class="icon icon-play"></i></button>
+                    </span>
+                    <audio loop id="sound-birds-chirping">
+                        <source src="audio/birds-chirping.mp3" type="audio/mpeg">
+                    </audio> 
+                    <span class="audio-control">
+                        <img src="images/speaker-filled-audio-tool.png" alt="sound icon" class="sound-icon">
+                        <input type="range" min="0" max="1" step="0.01" value="0.75" id="volume-birds-chirping" aria-label="Birds Chirping volume">
+                    </span>
+                </div>
+
+                <div class="audio-container">
+                    <!-- insects -->
+                    <span class="audio-title">
+                        <h3>insects</h3>
+                        <button aria-pressed="false" id="play-2" aria-label="play insects" class="unpressed">play</button>
+                    </span>
+                    <audio loop="" id="audio-2">
+                        <source type="audio/mpeg" src="audio/insects.mp3">
+                        <p>Your browser doesn't support HTML 5 sounds.</p>
+                    </audio>
+                    <span class="audio-control">
+                        <img src="images/speaker-filled-audio-tool.png" alt="sound icon" class="sound-icon">
+                        <input type="range" min="0" max="1" step="0.01" class="vol-control" id="volume-2" aria-label="insects volume">
+                    </span>
+                </div>    
+                
+                <div class="audio-container">
+                    <!-- river -->
+                    <span class="audio-title">
+                        <h3>river</h3>
+                        <button aria-pressed="false" id="play-3" aria-label="play river" class="unpressed">play</button>
+                    </span>
+                    <audio loop="" id="audio-3">
+                        <source type="audio/mpeg" src="audio/river.mp3">
+                        <p>Your browser doesn't support HTML 5 sounds.</p>
+                    </audio>
+                    <span class="audio-control">
+                        <img src="images/speaker-filled-audio-tool.png" alt="sound icon" class="sound-icon">
+                        <input type="range" min="0" max="1" step="0.01" class="vol-control" id="volume-3" aria-label="river volume">
+                    </span>
+                </div>    
+                    
+                <div class="audio-container">
+                    <!-- waterfall -->
+                    <span class="audio-title">
+                        <h3>waterfall</h3>
+                        <button aria-pressed="false" id="play-4" aria-label="play waterfall" class="unpressed">play</button>
+                    </span>
+                    <audio loop="" id="audio-4">
+                        <source type="audio/mpeg" src="audio/waterfall.mp3">
+                        <p>Your browser doesn't support HTML 5 sounds.</p>
+                    </audio>
+                    <span class="audio-control">
+                        <img src="images/speaker-filled-audio-tool.png" alt="sound icon" class="sound-icon">
+                        <input type="range" min="0" max="1" step="0.01" class="vol-control" id="volume-4" aria-label="river volume">
+                    </span>
+                </div>
+
+                <div class="audio-container">
+                    <!-- rain -->
+                    <span class="audio-title">
+                        <h3>rain</h3>
+                        <button aria-pressed="false" id="play-5" aria-label="play rain" class="unpressed">play</button>
+                    </span>
+                    <audio loop="" id="audio-5">
+                        <source type="audio/mpeg" src="audio/rain.mp3">
+                        <p>Your browser doesn't support HTML 5 sounds.</p>
+                    </audio>
+                    <span class="audio-control">
+                        <img src="images/speaker-filled-audio-tool.png" alt="sound icon" class="sound-icon">
+                        <input type="range" min="0" max="1" step="0.01" class="vol-control" id="volume-5" aria-label="rain volume">
+                    </span>
+                </div>
+
+                <div class="audio-container">
+                    <!-- ocean -->
+                    <span class="audio-title">
+                        <h3>ocean</h3>
+                        <button aria-pressed="false" id="play-6" aria-label="play ocean" class="unpressed">play</button>
+                    </span>
+                    <audio loop="" id="audio-6">
+                        <source type="audio/mpeg" src="audio/ocean.mp3">
+                        <p>Your browser doesn't support HTML 5 sounds.</p>
+                    </audio>
+                    <span class="audio-control">
+                        <img src="images/speaker-filled-audio-tool.png" alt="sound icon" class="sound-icon">
+                        <input type="range" min="0" max="1" step="0.01" class="vol-control" id="volume-6" aria-label="ocean volume">
+                    </span>
+                </div>
+
+                <div class="audio-container">
+                    <!-- wind -->
+                    <span class="audio-title">
+                        <h3>wind</h3>
+                        <button aria-pressed="false" id="play-7" aria-label="play wind" class="unpressed">play</button>
+                    </span>
+                    <audio loop="" id="audio-6">
+                        <source type="audio/mpeg" src="audio/wind.mp3">
+                        <p>Your browser doesn't support HTML 5 sounds.</p>
+                    </audio>
+                    <span class="audio-control">
+                        <img src="images/speaker-filled-audio-tool.png" alt="sound icon" class="sound-icon">
+                        <input type="range" min="0" max="1" step="0.01" class="vol-control" id="volume-7" aria-label="wind volume">
+                    </span>
+                </div>
+              </section>
+            </main>
+            
+            <footer>
+                <address class="adress">
+                <p>idea, development and illustrations by <a href="https://aclypse.me/" target="_blank"><b>aclypse</b></a></button>
+                inspired by <a href="https://imissmycafe.com/" target="_blank"><b>i miss my cafe</b></a></p>
+                <button id="openButton" onclick="openWindow()">X</button>
+                <button id="closeButton" onclick="closeWindow()">X</button>
+                </address>
+
+                <div style="display: none;" id="open-window">
+                    <p>pop up window</p>
+                </div>
+            </footer>
+                
+            
+            
+        </body>
+
+</html>

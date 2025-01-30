@@ -1,0 +1,251 @@
+/* general setup */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 18px;
+  --main-color: #033a35;
+  --shadow-color: var(--main-color);
+}
+
+
+html {
+  font-size: 18px;
+}
+
+body {
+  margin: auto 0;
+  background-color: #E5DDD2;
+  color: #033a35;
+  /* column-count: 3; */
+  /* column-width: 320px; */
+}
+
+main {
+  display: flex;
+  width: auto;
+  height: auto;
+  
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+@font-face {
+  font-family: 'RECOLETA-REGULARDEMO.OTF';
+  src: url(fonts/RECOLETA-REGULARDEMO.OTF); /* don't forget to change the path */
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.left {
+  display: flex;
+  margin: 24px 24px 24px 48px;
+  flex-direction: column;
+}
+
+.title p {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.left iframe {
+  box-shadow: var(--shadow-color) 0 4px 10px;
+  margin-top: 24px;
+  width: 100%;
+  min-width: 240px;
+  max-height: 700px;
+}
+
+.center {
+  display:block;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.center img {
+  width: 100%;
+  height: auto;
+  max-height: 700px;
+  min-width: 240px;
+  object-fit: contain;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  margin: 24px 48px 24px 24px;
+  min-width: 240px;
+}
+
+.audio-container {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0 12px 0;
+  width: 100%;
+}
+
+.audio-title {
+  display: flex;
+  align-items: center;
+}
+
+.audio-title h3 {
+  margin: 0 8px 8px 0;
+}
+
+.audio-control {
+  display: flex;
+  align-items: center;
+  margin: 8px 0 8px 0;
+}
+
+/* Style buttons */
+
+ .btn {
+  background-color:transparent;
+  border: none;
+  font-size: 16px;
+  margin-left: 4px;
+  margin-right: 4px;
+  cursor: pointer;
+  color: #033a35;
+}
+
+.btn:hover {
+  box-shadow: var(--shadow-color) 0px 0px 10px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 70%;
+  /* margin-left: 12px;
+  background-color: #033a35;
+  width: 70%;
+  max-width: 300px;
+  height: 12px;
+  border-radius: 5px;
+  border: 2px solid #033a35; */
+}
+
+/***** Focus Styles *****/
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/***** Track Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #033a35;
+  height: 0.2rem;
+  border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -5px; /*Centers thumb on the track*/
+  background-color: #033a35;
+  height: 0.7rem;
+  width: 0.7rem;   
+  border-radius: 50%;
+  outline: #E5DDD2 solid 2px;
+}
+
+/* hover style chrome, safari, opera, edge */
+input[type="range"]:hover::-webkit-slider-thumb {
+  box-shadow: var(--shadow-color) 0px 0px 10px;
+}
+
+/* focus style chrome, safari, opera, edge */
+input[type="range"]:focus::-webkit-slider-thumb {
+  outline: 2px solid #053a5f;
+  outline-offset: 0.125rem;
+}
+
+/******** Firefox ********/
+input[type="range"]::-moz-range-track {
+  background: #033a35;
+  height: 0.5rem;
+  border-radius: 5px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 0; /*Removes default border-radius that FF applies*/
+  background-color: #033a35;
+  height: 0.7rem;
+  width: 0.7rem;
+  border-radius: 50%;
+  outline: #E5DDD2 solid 2px;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+  outline: 2px solid #033a35;
+  outline-offset: 0.125rem;     
+}
+
+input[type="range"]:hover::-moz-range-thumb {
+  box-shadow: var(--shadow-color) 0px 0px 10px;
+}
+
+/*
+.middle {
+  position: absolute;
+  vertical-align: middle;
+}
+
+img {
+  width: 450px;
+  height: auto;
+}
+
+#block {
+  display: inline-block;
+  border-radius: 200px;
+  width: 50%;
+  height: auto;
+  align-items: center;
+} */
+
+footer {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  padding: 8px 77px 8px 77px;
+  width: 100%;
+}
+
+address {
+  display: block;
+  margin:auto;
+}
+
+/* open and close info window */
+
+#open-window {
+  display: none;
+  background-color: aqua;
+  overflow: scroll;
+  position:absolute;
+  z-index: 2;
+  width:80%;
+  height: 60%;
+}
+
+#closeButton {
+  background-image: url(../images/speaker-filled-audio-tool.png);
+
+}
+
